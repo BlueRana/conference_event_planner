@@ -1,41 +1,41 @@
-import { createSlice } from "@reduxjs/toolkit";
+    import { createSlice } from "@reduxjs/toolkit";
 
 export const avSlice = createSlice({
   name: "av",
   initialState: [
     {
-        img: "https://cdn.pixabay.com/photo/2014/04/05/11/27/objects-315646_1280.jpg",
+        img: "https://pixabay.com/images/download/business-20031_640.jpg",
         name: "Projectors",
         cost: 200,
         quantity: 0,
     },
     {
-        img: "https://cdn.pixabay.com/photo/2016/11/14/04/42/techland-1822629_1280.jpg",
+        img: "https://pixabay.com/images/download/speakers-4109274_640.jpg",
         name: "Speaker",
         cost: 35,
         quantity: 0,
-
     },
     {
-        img: "https://cdn.pixabay.com/photo/2020/10/09/11/59/microphone-5640383_1280.jpg",
+        img: "https://pixabay.com/images/download/public-speaking-3926344_640.jpg",
         name: "Microphones",
         cost: 45,
         quantity: 0,
     },
     {
-        img: "https://cdn.pixabay.com/photo/2015/01/08/18/30/white-board-593370_1280.jpg",
+        img: "https://pixabay.com/images/download/whiteboard-2903269_640.png",
         name: "Whiteboards",
         cost: 80,
         quantity: 0,
     },
+
     {
-        img: "https://cdn.pixabay.com/photo/2014/04/05/11/27/objects-315646_1280.jpg",
+        img: "https://pixabay.com/images/download/signpost-235079_640.jpg",
         name: "Signage",
         cost: 80,
         quantity: 0,
     },
 
-    
+
   ],
 
 
@@ -54,5 +54,7 @@ export const avSlice = createSlice({
     },
   },
 });
+
 export const { incrementAvQuantity, decrementAvQuantity } = avSlice.actions;
+
 export default avSlice.reducer;

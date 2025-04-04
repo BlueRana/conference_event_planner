@@ -1,6 +1,5 @@
 // venueSlice.js
 import { createSlice } from "@reduxjs/toolkit";
-
 export const venueSlice = createSlice({
   name: "venue",
   initialState: [
@@ -36,7 +35,7 @@ export const venueSlice = createSlice({
     },
   
   ],
-  reducers: {
+ reducers: {
    
     incrementQuantity: (state, action) => {
       const { payload: index } = action;
